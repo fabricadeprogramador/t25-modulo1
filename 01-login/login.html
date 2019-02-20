@@ -6,10 +6,13 @@
 
     <style>
     body{
+        background-image: url(https://ak8.picdn.net/shutterstock/videos/31579318/thumb/1.jpg);
+        background-position: center;
+        background-size: cover;
         font-family: sans-serif;
     }    
 
-    #login{
+    .login{
         background-color: #f1f1f1;
         width: 30%;
         margin: auto;
@@ -17,20 +20,20 @@
         margin-top: 50px;
     }
 
-    #login input{
+    .login input{
         padding:10px;
         margin: 5px;
         width: 100%;
         border: 1px solid gray;
     }
 
-    #login h1{
+    .login h1{
         text-align: center;
         color: gray;
         font-weight: 100;
     }
 
-    #login button{
+    .login button{
         padding:10px;
         width: 100%;
         background-color: #4242ff;
@@ -40,12 +43,18 @@
         border: none;
     }
 
-    #login a{
+    .login a{
         text-decoration: none;
         color: gray;
     }
 
-    #links{
+    .login img{
+       width: 200px;
+       display: block;
+       margin: auto;
+    }
+
+    .links{
         text-align: center;
         padding: 5px;
     }
@@ -54,7 +63,8 @@
 
 <body>
 
-    <div id="login">
+    <div class="login">
+        <img src="https://avatars0.githubusercontent.com/u/30628237?s=280&v=4" alt="Logo do Fábrica">
         <div>
             <h1> Log-in </h1>
         </div>
@@ -70,7 +80,7 @@
             <button>login</button>
         </div>
 
-        <div id="links">
+        <div class="links">
             <a href="">Register</a> | <a href="">Forgot Password</a>
         </div>
     </div>
