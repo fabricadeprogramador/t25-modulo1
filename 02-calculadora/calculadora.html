@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+
+        <style>
+        </style>
+
+        <script>
+            function somar(){
+                
+               var n1 = parseFloat(document.getElementById("input1").value)
+               var n2 = parseFloat(document.getElementById("input2").value)
+
+               var resultado = n1 + n2
+
+               alert(resultado)
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="calc" class="calculadora">
+
+            <h1>Calculadora High Tech</h1>
+
+            <label for="numero1">Número 1:</label>
+            <input type="number" name="numero1" id="input1">
+
+            <label for="numero2">Número 2:</label>
+            <input type="number" name="numero2" id="input2">
+
+            <button type="button" onclick="window.somar()">Somar</button>
+        </div>
+        
+    </body>
+</html>
