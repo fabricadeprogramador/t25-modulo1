@@ -1,13 +1,51 @@
 <html>
-    <head>
-        <title>Calculadora</title>
-        <meta charset="utf-8">
 
-        <style>
-        </style>
+<head>
+    <title>Calculadora</title>
+    <meta charset="utf-8">
 
-        <script>
-            function somar(){
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        .calculadora{
+            width: 30%;
+            margin: auto;
+            background-color: blue;
+            margin-top: 50px;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .calculadora h1{
+            text-align: center;
+            color: white;
+            font-weight: 100;
+        }
+
+        .calculadora label{
+            color: white;
+        }
+
+        .calculadora div{
+            text-align: center;
+            /* padding: 10px; */
+            margin: 15px 0px 15px 0px;
+        }
+
+        .calculadora button{
+            padding: 8px;
+            background-color: white;
+            color: blue;
+            border-radius: 10px;
+            margin: 5px;
+            border: none;
+        }
+    </style>
+
+    <script>
+        function somar(){
                 
                var n1 = parseFloat(document.getElementById("input1").value)
                var n2 = parseFloat(document.getElementById("input2").value)
@@ -16,22 +54,57 @@
 
                alert(resultado)
             }
+
+            function subtrair(){
+                 var n1 = parseFloat(document.getElementById("input1").value)
+                 var n2 = parseFloat(document.getElementById("input2").value)
+
+                 var resultado = n1 - n2
+
+                 alert(resultado)
+            }
+
+            function multiplicar(){
+                 var n1 = parseFloat(document.getElementById("input1").value)
+                 var n2 = parseFloat(document.getElementById("input2").value)
+
+                 var resultado = n1 * n2
+
+                 alert(resultado)
+            }
+
+            function dividir(){
+                 var n1 = parseFloat(document.getElementById("input1").value)
+                 var n2 = parseFloat(document.getElementById("input2").value)
+
+                 var resultado = n1 / n2
+
+                 alert(resultado)
+            }
         </script>
-    </head>
+</head>
 
-    <body>
-        <div id="calc" class="calculadora">
+<body>
+    <div id="calc" class="calculadora">
 
-            <h1>Calculadora High Tech</h1>
-
+        <h1>Calculadora High Tech</h1>
+        <div>
             <label for="numero1">Número 1:</label>
             <input type="number" name="numero1" id="input1">
+        </div>
 
+        <div>
             <label for="numero2">Número 2:</label>
             <input type="number" name="numero2" id="input2">
-
-            <button type="button" onclick="window.somar()">Somar</button>
         </div>
-        
-    </body>
+
+        <div>
+            <button type="button" onclick="somar()">Somar</button>
+            <button type="button" onclick="subtrair()">Subtrair</button>
+            <button type="button" onclick="multiplicar()">Multiplicar</button>
+            <button type="button" onclick="dividir()">Dividir</button>
+        </div>
+    </div>
+</body>
+
 </html>
