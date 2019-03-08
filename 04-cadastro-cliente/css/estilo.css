@@ -1,13 +1,13 @@
-body{
+body {
     font-family: sans-serif;
     margin: 0px;
 }
 
-h1{
+h1 {
     margin: 0px;
 }
 
-nav{
+nav {
     background-color: rgb(9, 163, 198);
     width: 30%;
     float: left;
@@ -19,31 +19,107 @@ nav{
     position: fixed;
     box-shadow: 5px 0px 10px gray;
     overflow: hidden;
+    transition: width .8s;
 }
 
-nav ul{
+nav ul {
     margin: 0px;
     padding: 0px;
 }
 
-nav li{
+nav li {
     padding: 10px;
     list-style: none;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: rgb(13, 101, 121);
     cursor: pointer;
+    transition: background-color .3s;
 }
 
-
-
-main{
+main {
     width: 70%;
     float: right;
+    transition: width .8s;
+}
+
+main h1 {
+    text-align: center;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+form div {
+    margin: 20px 0px 20px 0px;
+    ;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+}
+
+form button {
+    background-color: rgb(9, 163, 198);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: rgb(13, 101, 121);
+    transition: background-color .3s;
+}
+
+img {
+    width: 20px;
+}
+
+.centro {
+    text-align: center;
+}
+
+.btn-menu-abrir {
+    opacity: 1;
+}
+
+.btn-menu-fechar {
+    opacity: 0;
+}
+
+.menu-aberto {
+    width: 50%;
+}
+
+#divImg {
+    margin: 20px 0px 20px 30px;
+}
+
+@keyframes slide-message {}
+
+@media(max-width : 600px) {
+
+    nav {
+        width: 0%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .btn-menu-fechar {
+        opacity: 1;
+    }
 }

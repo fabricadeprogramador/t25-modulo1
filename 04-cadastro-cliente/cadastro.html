@@ -7,7 +7,8 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="menu">
+        <img src="img/cancel.svg" alt="Fechar" class="btn-menu-abrir">
         <h2>Menu</h2>
         <ul>
             <a href="">
@@ -31,6 +32,9 @@
         </ul>
     </nav>
     <main>
+        <div id="divImg">
+            <img src="img/menu.svg" alt="Menu" class="btn-menu-fechar">
+        </div>
         <h1>Cadastro de Cliente</h1>
         <form action="">
             <div>
@@ -88,7 +92,7 @@
                 <input type="datetime-local" id="datanasc">
             </div>
 
-            <div>
+            <div class="centro" id="centro">
                 <button type="button" onclick="">Salvar</button>
             </div>
         </form>
