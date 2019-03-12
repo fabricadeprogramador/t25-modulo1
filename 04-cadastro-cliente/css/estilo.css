@@ -100,7 +100,11 @@ img {
 }
 
 .menu-aberto {
-    width: 50%;
+    width: 30%;
+}
+
+.menu-fechado{
+    width: 0%;
 }
 
 #divImg {
