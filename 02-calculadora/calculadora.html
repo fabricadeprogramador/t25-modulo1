@@ -44,44 +44,7 @@
         } 
     </style>
 
-    <script>
-        function somar(){
-                
-               var n1 = parseFloat(document.getElementById("input1").value)
-               var n2 = parseFloat(document.getElementById("input2").value)
-
-               var resultado = n1 + n2
-
-               alert(resultado)
-            }
-
-            function subtrair(){
-                 var n1 = parseFloat(document.getElementById("input1").value)
-                 var n2 = parseFloat(document.getElementById("input2").value)
-
-                 var resultado = n1 - n2
-
-                 alert(resultado)
-            }
-
-            function multiplicar(){
-                 var n1 = parseFloat(document.getElementById("input1").value)
-                 var n2 = parseFloat(document.getElementById("input2").value)
-
-                 var resultado = n1 * n2
-
-                 alert(resultado)
-            }
-
-            function dividir(){
-                 var n1 = parseFloat(document.getElementById("input1").value)
-                 var n2 = parseFloat(document.getElementById("input2").value)
-
-                 var resultado = n1 / n2
-
-                 alert(resultado)
-            }
-        </script>
+    <script src="js/Calculadora.js"></script>
 </head>
 
 <body>
@@ -99,10 +62,10 @@
         </div>
 
         <div>
-            <button type="button" onclick="somar()">Somar</button>
-            <button type="button" onclick="subtrair()">Subtrair</button>
-            <button type="button" onclick="multiplicar()">Multiplicar</button>
-            <button type="button" onclick="dividir()">Dividir</button>
+            <button type="button" onclick="calc.somar()">Somar</button>
+            <button type="button" onclick="calc.subtrair()">Subtrair</button>
+            <button type="button" onclick="calc.multiplicar()">Multiplicar</button>
+            <button type="button" onclick="calc.dividir()">Dividir</button>
         </div>
     </div>
 </body>
