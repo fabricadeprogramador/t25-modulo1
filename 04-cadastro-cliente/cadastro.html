@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/cssChanger.js"></script>
-    <script src="js/cadastroCliente.js"></script>
+    <script src="js/Validador.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
         <h1>Cadastro de Cliente</h1>
         <form action="">
             <div>
-                <input type="text" placeholder="Nome">
+                <input type="text" placeholder="Nome" id="inputNome">
             </div>
 
             <div>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="centro" id="centro">
-                <button type="button" onclick="">Salvar</button>
+                <button type="button" onclick="validador.validar()">Salvar</button>
             </div>
         </form>
     </main>
