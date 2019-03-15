@@ -111,7 +111,38 @@ img {
     margin: 20px 0px 20px 30px;
 }
 
-@keyframes slide-message {}
+.mensagens{
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    opacity: .8;
+    position: absolute;
+    width: 60%;
+    /* animação */
+    animation: slide-message 1s;
+}
+
+.mensagens.show{
+    display: block;
+}
+
+.mensagens img{
+    cursor: pointer;
+    width: 10px;
+    float: right;
+}
+
+@keyframes slide-message {
+    from{
+        transform: translate3d(0px, -50px, 0px);
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0px, 0px, 0px);
+        opacity: .8;
+    }
+}
 
 @media(max-width : 600px) {
 

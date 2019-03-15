@@ -44,7 +44,7 @@ class Validador {
 
         if(foto == undefined){
             mensagem += "Selecione uma foto!\n"
-        } else if(foto.size >= 1000){
+        } else if(foto.size >= 1000000){
             mensagem += "A foto deve ter no máximo 1 MB!\n"
         }
 
@@ -54,8 +54,11 @@ class Validador {
 
         //IMPRESSÃO DA MENSAGEM NO ALERTA
         if(mensagem != ""){
-            alert(mensagem)
+            // alert(mensagem)
+            document.getElementById("textoMensagem").innerText = mensagem
+            document.querySelector('#mensagens').classList.add('show')
         }
+
     }
 }
 
