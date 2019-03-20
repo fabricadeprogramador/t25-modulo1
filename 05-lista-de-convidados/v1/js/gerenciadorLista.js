@@ -1,18 +1,27 @@
-class GerenciadorLista{
+class GerenciadorLista {
 
-    adicionarConvidado(){
-        // let convidado = document.getElementById("inputConvidado").value
+    adicionarConvidado() {
+     
+        let ehValido = this.validar()
 
-        // document.getElementById("lista").innerText += convidado + '\n'
-        
-    }    
-
-    validar(){
-        if(document.getElementById("inputConvidado").value == ""){
-            alert("Insira o nome do convidado!")
+        if(ehValido){
+            //Adiciono
+            let convidado = document.getElementById('inputConvidado').value
+            document.getElementById('lista').innerText += convidado + '\n'
         } else {
-
+            alert("Preencha o nome do convidado!")
         }
+
+    }
+
+    validar() {
+        if (document.getElementById("inputConvidado").value == "") {
+            //Inválido
+            return false
+        }
+
+        //Válido
+        return true
     }
 }
 
