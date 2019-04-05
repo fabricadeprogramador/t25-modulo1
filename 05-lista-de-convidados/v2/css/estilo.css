@@ -1,18 +1,19 @@
-body{
+body {
     background-color: gray;
     font-family: sans-serif;
 }
 
-h2{
+h2 {
     color: gray;
-    font-weight: 300; 
+    font-weight: 300;
     text-align: center;
 }
 
 .card1 {
     background-color: white;
-    
+
 }
+
 .card {
     background-color: white;
     width: 30%;
@@ -23,39 +24,37 @@ h2{
     border-radius: 5px;
     box-shadow: 0px 0px 0.1px;
 }
-.card input{
+
+.card input {
     border: none;
     border-bottom: 1px solid gray;
     width: 100%;
 }
 
-.card button{
+.card button {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
 }
 
-.card button:hover{
+.card button:hover {
     color: white;
     background-color: gray;
     cursor: pointer;
 }
 
-
-.imagem{
+.imagem {
     width: 15px;
+    margin: 0px 0px 0px 5px;
     /* text-align: right;    */
     float: right;
 
 }
 
-.imagem:hover{
+.imagem:hover {
     cursor: pointer;
 }
-
-
 
 .div {
     text-align: left;
 }
-
