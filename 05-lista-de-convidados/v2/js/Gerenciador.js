@@ -9,10 +9,10 @@ class Gerenciador {
     salvar() {
 
         //Variável "ehValido" recebe o retorno da função validar.
-        let Ehvalido = this.validar()
+        let ehValido = this.validar()
 
         //Verifica de o valor retornado é verdadeiro, ou seja, o campo com nome foi digitado
-        if (Ehvalido) {
+        if (ehValido) {
             //variável contendo o valor do input
             let nomeConvidado = document.getElementById('inputConvidado').value
 
@@ -85,7 +85,9 @@ class Gerenciador {
     }
 
     validar() {
+        //Pega o texto de dentro do inputConvidado
         let nomeConvidado = document.getElementById('inputConvidado').value
+        //Verifica se foi digitado o nome no input
         if (nomeConvidado == "") {
             alert("Digite o nome do convidado!")
             return false
@@ -94,7 +96,10 @@ class Gerenciador {
     }
 
     limpar() {
+        //Seta o texto de dentro do input "inputConvidado" para vazio
         document.getElementById('inputConvidado').value = ''
     }
 }
+
+//Instanciando o objeto da classe Gerenciador
 let gerenciador = new Gerenciador()
