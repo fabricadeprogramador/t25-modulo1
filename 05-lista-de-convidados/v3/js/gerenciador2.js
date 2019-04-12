@@ -20,14 +20,21 @@ class Gerenciador {
             
             let tabela = document.getElementById("tabela")
 
-            let linha = document.createElement('tr')
+            // let linha = document.createElement('tr')
+            let linha = tabela.insertRow(contador)
             linha.setAttribute('id', 'linha-' + contador)
 
-            let colunaNome = document.createElement('td')
-            let colunaIdade = document.createElement('td')
-            let colunaSexo = document.createElement('td')
-            let colunaExcluir = document.createElement('td')
-            let colunaEditar = document.createElement('td')
+            // let colunaNome = document.createElement('td')
+            // let colunaIdade = document.createElement('td')
+            // let colunaSexo = document.createElement('td')
+            // let colunaExcluir = document.createElement('td')
+            // let colunaEditar = document.createElement('td')
+
+            let colunaNome = linha.insertCell(0)
+            let colunaIdade = linha.insertCell(1)
+            let colunaSexo = linha.insertCell(2)
+            let colunaExcluir = linha.insertCell(3)
+            let colunaEditar = linha.insertCell(4)
 
             colunaNome.innerText = nomeConvidado
             colunaIdade.innerText = idadeConvidado
@@ -46,13 +53,13 @@ class Gerenciador {
             colunaExcluir.appendChild(imgExcluir)
             colunaEditar.appendChild(imagemEditar)
 
-            linha.appendChild(colunaNome)
-            linha.appendChild(colunaIdade)
-            linha.appendChild(colunaSexo)
-            linha.appendChild(colunaEditar)
-            linha.appendChild(colunaExcluir)
+            // linha.appendChild(colunaNome)
+            // linha.appendChild(colunaIdade)
+            // linha.appendChild(colunaSexo)
+            // linha.appendChild(colunaEditar)
+            // linha.appendChild(colunaExcluir)
 
-            tabela.appendChild(linha)
+            // tabela.appendChild(linha)
 
             contador++
 
