@@ -8,6 +8,11 @@ class Gerenciador {
     //Méltodo responsável por adicionar uma nova div na lista contendo o convidado e suas ações
     salvar() {
 
+        let convidado = {}
+
+        convidado.nome = "Jão"
+        convidado.idade = 15
+
         //Variável "ehValido" recebe o retorno da função validar.
         let ehValido = this.validar()
 
