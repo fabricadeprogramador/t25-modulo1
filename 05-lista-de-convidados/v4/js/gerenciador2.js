@@ -70,6 +70,7 @@ class Gerenciador {
                 this.contador++
             } else {
                 this.salvarEdicao(convidado)
+                this.elementoEditar = null
             }
 
             this.limpar()
