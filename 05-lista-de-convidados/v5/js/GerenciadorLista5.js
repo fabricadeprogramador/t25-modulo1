@@ -3,6 +3,7 @@ class GerenciadorLista5 {
     constructor() {
         this.lista = []
         this.contador = 1
+        this.idEdicao = -1
     }
 
     lerDados() {
@@ -65,21 +66,68 @@ class GerenciadorLista5 {
             document.querySelector('[type=radio]:checked').checked = false
     }
 
-    editar() {}
+    editar(id) {
+        let posicao = -1
+
+        for(let i = 0; i < this.lista.length; i++){
+            if(this.lista[i].id == id){
+                posicao = i
+            }
+        }      
+        
+        if(posicao != -1){
+            this.idEdicao = id
+            document.getElementById("inputConvidado").value = this.lista[posicao].nome
+            document.getElementById("inputIdade").value = this.lista[posicao].idade
+
+            if(this.lista[posicao].sexo == "M"){
+                document.getElementById("masc").checked = true
+            } else {
+                document.getElementById("fem").checked = true
+            }
+        }
+    }
 
     salvar() {
         let convidado = this.lerDados()
 
         if(this.validar(convidado)){
-            convidado.id = this.contador
-            this.lista.push(convidado)
-            this.contador++
+
+            if(this.idEdicao == -1){
+                convidado.id = this.contador
+                this.lista.push(convidado)
+                this.contador++
+            } else {
+                for(let i  = 0; i < this.lista.length; i++){
+                    if(this.lista[i].id == this.idEdicao){
+                        this.lista[i].nome = convidado.nome
+                        this.lista[i].idade = convidado.idade
+                        this.lista[i].sexo = convidado.sexo
+                    }
+                }
+            }
 
             this.gerarTabela()
         }
+
+        this.limparCampos()
     }
 
-    remover() {}
+    remover(id) {
+
+        let posicao = -1
+
+        for(let i = 0; i < this.lista.length; i++){
+            if(this.lista[i].id == id){
+                posicao = i
+            }
+        }
+
+        if(posicao !=  -1){
+            this.lista.splice(posicao, 1)
+            this.gerarTabela()
+        }
+    }
 
 }
 
