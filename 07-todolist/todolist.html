@@ -7,16 +7,19 @@
     </head>
 
     <body>
-        <h1>To Do List</h1>
-
-        <input type="text" id="inputToDo" placeholder="Tarefa...">
-
-        <img src="img/add.svg" alt="go" id="go" onclick="toDoController.salvar()">
-
-        <table>
-            <tbody id="tabela">
-            </tbody>
-        </table>
+        <div class="card">
+            <h1>To Do List</h1>
+    
+            <div class="entrada">
+                <input type="text" id="inputToDo" placeholder="Tarefa...">
+                <img src="img/add.svg" alt="go" id="go" onclick="toDoController.salvar()">
+            </div>
+    
+            <table class="tabela">
+                <tbody id="tabela">
+                </tbody>
+            </table>
+        </div>
 
     </body>
 </html>

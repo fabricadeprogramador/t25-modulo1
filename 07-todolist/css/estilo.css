@@ -1,3 +1,39 @@
 img{
     width: 20px;
 }
+
+.card{
+    width: 40%;
+    margin:auto;
+    margin-top: 5%;
+    vertical-align: center;
+}
+
+.card h1{
+    text-align: center;
+}
+
+.card input{
+    width: 93%;
+}
+
+.entrada{
+    width: 80%;
+    margin: auto;
+}
+
+.entrada img{
+    vertical-align: middle;
+    padding: 2px;
+}
+
+.tabela{
+    /* margin: 30px 10px 30px 10px;  */
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.tabela td{
+    text-align: center;
+}
