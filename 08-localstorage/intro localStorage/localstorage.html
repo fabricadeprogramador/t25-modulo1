@@ -12,11 +12,11 @@
             }
 
             let objStr = JSON.stringify(obj)
-           localStorage.setItem("objChave", objStr)
+            localStorage.setItem("objChave", objStr)
 
         }
 
-        function buscar(){
+        function buscar() {
             let objStr = localStorage.getItem("objChave")
 
             let obj = JSON.parse(objStr)
@@ -27,7 +27,6 @@
 </head>
 
 <body>
-   
     <button type="button" onclick="inserir()">Inserir no LS</button>
     <button type="button" onclick="buscar()">Buscar no LS</button>
 </body>
