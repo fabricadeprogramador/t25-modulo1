@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Esqueceu Senha</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/ForgotController.js"></script>
+    </head>
+
+    <body>
+        <div class="main">
+            <img src="./img/person.svg" alt="Avatar Person">
+            <h1>Forgot Password?</h1>
+
+            <div>
+                <input type="email" placeholder="E-mail" id="inputEmail">
+            </div>
+
+            <div>
+                <button type="button" onclick="forgotController.recuperarUsuario()">Send E-mail</button>
+            </div>
+
+            <div class="links">
+                <a href="login.html">Back</a>
+            </div>
+        </div>
+    </body>
+</html>
