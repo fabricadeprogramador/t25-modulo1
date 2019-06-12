@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Lista de Convidados-v2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/Gerenciador.js"></script>
+</head>
+
+<body onload="gerenciador.buscarDadosLocalStorage()">
+    <div id="card1" class="card">
+        <div>
+            <h2>Adicionar Convidado</h2>
+
+        </div>
+        <div>
+            <input id = "inputConvidado" type="text" placeholder="Nome do Convidado">
+        </div>
+
+        <div class="botoes">
+            <button onclick="gerenciador.salvar()">Salvar</button>
+        
+            <button onclick="gerenciador.limpar()">Cancelar</button>
+        </div>
+
+    </div>
+
+    <div id="card2" class="card"> 
+        <h2>Lista de Convidados</h2>
+
+        <div  id="lista">
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
