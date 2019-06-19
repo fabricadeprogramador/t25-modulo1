@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Vagas</title>
+    <link rel="stylesheet" href="css/gerenciadorVagas.css">
+    <script src="js/GerenciadorVagas.js"></script>
+</head>
+<body onload="gerenciador.carregarCarrosRegistrados()">
+
+    <div class="card">
+        <input type="text" id="marca" placeholder="marca">
+        <input type="text" id="modelo" placeholder="modelo">
+        <input type="number" id="ano" placeholder="ano">
+        <input type="text" id="placa" placeholder="placa">
+
+        <select name="area" id="area">
+            <option value="">Área</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+
+        <button type="button" onclick="gerenciador.registrar()">Registrar</button>
+    </div>
+    
+</body>
+</html>
