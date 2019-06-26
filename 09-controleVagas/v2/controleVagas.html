@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Controle de Vagas - HT</title>
+    <meta charset="utf-8">
+    <script src="js/ControleVagas.js"></script>
+    <link rel="stylesheet" href="css/controleVagas.css">
+</head>
+
+<body onload="controller.carregarLocalStorage()">
+
+    <div class="card">
+        
+        <h1 id="titulo">Estacionamento - HT</h1>
+
+        <div class="vagas">
+            <div class="rotulo">
+                A
+            </div>
+
+            <div class="vaga" id="A1" onclick="controller.setarVaga(0)">
+                A1
+            </div>
+            <div class="vaga" id="A2" onclick="controller.setarVaga(1)">
+                A2  
+            </div>
+            <div class="vaga" id="A3" onclick="controller.setarVaga(2)">
+                A3
+            </div>
+            <div class="vaga" id="A4" onclick="controller.setarVaga(3)">
+                A4
+            </div>
+            <div class="vaga" id="A5" onclick="controller.setarVaga(4)">
+                A5
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

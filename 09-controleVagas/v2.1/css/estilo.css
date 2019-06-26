@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+
+.titulo h1{
+    font-weight: 400;
+}
+
+.regiao{
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+.vaga{
+    border: 1px solid black;
+    margin: 5px;
+    width: 10%;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 5px 0px 10px gray;
+}
+
+.rotulo{
+    padding: 5px;
+    font-weight: bold;
+}
+
+.ocupado{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.desocupado{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
